@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel Ayomide | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<header id="home">
+ 
+  <h1>RALEKE UZOUKWU</h1>
+  <p>Web Developer • Graphic Designer • Network Engineer • IT Specialist</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</header>
+
+<hr>
+
+
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p>
+    I am a results-driven professional specializing in Web Development, Graphic Design,
+    Network Engineering, and IT Operations. I build modern, responsive, and secure
+    digital solutions that improve user experience and business performance.
+  </p>
+  <p>
+    With over <strong>9 months of hands-on experience</strong>, I have developed skills in
+    website development, system management, and network configuration.
+  </p>
+  <p>
+    I am passionate about technology, continuous learning, and delivering
+    high-quality solutions that create real impact.
+  </p>
+</section>
+
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skill-grid">
+
+    <div class="skill reveal">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, React.js, Node.js</p>
+      <p>Building responsive, fast, and user-friendly websites.</p>
+    </div>
+
+    <div class="skill reveal">
+      <h3>Graphic Design</h3>
+      <p>Photoshop, Illustrator, Canva</p>
+      <p>Creating modern designs and branding materials.</p>
+    </div>
+
+    <div class="skill reveal">
+      <h3>Network Engineering</h3>
+      <p>LAN/WAN, VPN, Network Security</p>
+      <p>Designing secure and reliable network systems.</p>
+    </div>
+
+    <div class="skill reveal">
+      <h3>IT Support</h3>
+      <p>System Maintenance, Troubleshooting</p>
+      <p>Ensuring smooth IT operations and system performance.</p>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project reveal">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio showcasing skills and projects.</p>
+    
+    </div>
+
+    <div class="project reveal">
+      <h3>Business Website</h3>
+      <p>Optimized and secure website built for a business brand.</p>
+   
+    </div>
+
+    <div class="project reveal">
+      <h3>Design Collection</h3>
+      <p>Logos, banners, and social media graphics.</p>
+  
+    </div>
+
+    <div class="project reveal">
+      <h3>IT & Network Setup</h3>
+      <p>Configured and maintained secure IT systems.</p>
+     
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+
+<section id="contact" class="section reveal">
+  <h2>Contact Me</h2>
+  <p>Available for freelance, remote, and full-time opportunities.</p>
+
+  <p><strong>Email:</strong> borisjulian5@gmail.com</p>
+  <p><strong>Phone:</strong> +234 9047895975</p>
+
+  <a href="https://wa.me/2349047895975" class="btn">Chat on WhatsApp</a>
+</section>
+<footer>
+  <p>© 2026 Uzoukwu• All Rights Reserved</p>
+</footer>
+
+
+<script>
+  // Scroll Reveal
+  function reveal() {
+    const elements = document.querySelectorAll(".reveal");
+    elements.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const visiblePoint = 100;
+
+      if (elementTop < windowHeight - visiblePoint) {
+        el.classList.add("active");
+      }
+    });
+  }
+  window.addEventListener("scroll", reveal);
+
+  // Click effect
+  const items = document.querySelectorAll(".skill, .project");
+  items.forEach(item => {
+    item.addEventListener("click", () => {
+      items.forEach(i => i.classList.remove("active"));
+      item.classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>
